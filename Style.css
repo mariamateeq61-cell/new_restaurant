@@ -1,0 +1,151 @@
+/* This makes width and padding easier to manage */
+* {
+  box-sizing: border-box;
+}
+
+/* Main page styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fff8ef;
+  color: #34231c;
+}
+
+/* Top restaurant heading */
+header {
+  padding: 40px 15px;
+  color: white;
+  background-color: #b33422;
+}
+
+header h1 {
+  margin: 6px 0;
+  font-size: 38px;
+  letter-spacing: 2px;
+}
+
+.small-title {
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Navigation bar */
+nav {
+  padding: 14px;
+  background-color: white;
+  box-shadow: 0 2px 7px #cfc5bd;
+}
+
+/* inline-block shows links next to each other */
+nav a {
+  display: inline-block;
+  margin: 5px 15px;
+  color: #9d2c1d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+  color: #ef8b21;
+}
+
+/* Main content area */
+main {
+  max-width: 1120px;
+  margin: auto;
+  padding: 32px 15px;
+}
+
+/* Space under each category */
+section {
+  margin-bottom: 48px;
+}
+
+/* Category headings */
+h2 {
+  color: #b33422;
+  font-size: 30px;
+}
+
+/* inline-block places cards side-by-side */
+.menu-card {
+  display: inline-block;
+  width: 30%;
+  min-width: 250px;
+  margin: 12px;
+  padding: 14px;
+  vertical-align: top;
+  text-align: left;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 9px #d6cec6;
+  transition: 0.3s;
+}
+
+/* Card hover effect */
+.menu-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 9px 18px #aca39c;
+}
+
+/* Food image styling */
+.menu-card img {
+  display: block;
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.menu-card h3 {
+  margin-bottom: 5px;
+}
+
+.menu-card p {
+  font-size: 14px;
+}
+
+/* Price styling */
+.price {
+  color: #b33422;
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+/* Add to Cart button */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #b33422;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #ef8b21;
+}
+
+/* Footer styling */
+footer {
+  padding: 18px;
+  color: white;
+  background-color: #34231c;
+}
+
+/* Mobile responsive design */
+@media (max-width: 700px) {
+  .menu-card {
+    width: 90%;
+    min-width: 0;
+  }
+
+  nav a {
+    margin: 6px;
+  }
+}
